@@ -1,0 +1,6 @@
+{
+    "username":"admin1",
+    "password":"Test1",
+    "url":"prod.com",
+    "quickLaunch":["Assign Leave","Leave List","Timesheets","Apply Leave","My Leave","My Timesheet"]
+}
