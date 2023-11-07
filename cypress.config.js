@@ -9,6 +9,9 @@ module.exports = defineConfig({
     failOnStatusCode: false,
     chromeWebSecurity: false,
     hideXHRInCommandLog: true,
+    videoUploadOnPasses:false,
+    video:false,
+    projectId: "xxjtkm",
     specPattern: [
       'cypress/e2e/*.js',
       'cypress/e2e/**/*.js'
