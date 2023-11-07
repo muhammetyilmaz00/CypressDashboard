@@ -1,22 +1,40 @@
 
-import { gitHubPricingURL } from "./authentication";
+import { gitHubPricingURL, gitHubCompareURL } from "./authentication";
 
 var data = require('../fixtures/gitHubPricing.json')
+var compareText = require('../fixtures/comparePage.json')
 
-export class Pricing{
+export class Pricing {
 
-    urlVerification(){
+    urlVerification() {
         cy.contains('Pricing').click()
-        cy.url().should('eq',gitHubPricingURL)
+        cy.url().should('eq', gitHubPricingURL)
     }
 
-    contact_gitHub_Verification(){
+    contact_gitHub_Verification() {
         cy.scrollTo('bottomLeft')
 
-        cy.get('.footer > :nth-child(1) > .d-flex > :nth-child(3)').each(($el,index) =>{
+        cy.get('.footer > :nth-child(1) > .d-flex > :nth-child(3)').each(($el, index) => {
             const text = $el.text()
             expect(text).to.contain(data.Pricing[index])
         })
+    }
+
+    compare_gitHub_and_gitLab() {
+
+        cy.contains('Pricing').click()
+        cy.scrollTo('bottomLeft')
+        cy.contains('How does GitHub compare to its main competitors?').click()
+        cy.contains('GitHub compares').click()
+        cy.url().should('eq', gitHubCompareURL)
+        
+        cy.get('[aria-describedby="gitlab"]').click()
+
+        cy.get('#gitlab tbody tr th span').each(($el,index) =>{
+            const text = $el.text()
+            expect(text).to.eq(compareText.compareItem[index])
+        })
+
     }
 }
 

@@ -12,4 +12,4 @@ export const loginPageErrorMessage = "Incorrect username or password."
 
 export const gitHubURL = "https://github.com/"
 export const gitHubPricingURL = "https://github.com/pricing"
-export const teslaModel3URL = "https://www.tesla.com/en_eu/model3"
+export const gitHubCompareURL = "https://resources.github.com/devops/tools/compare/"

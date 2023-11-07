@@ -14,4 +14,8 @@ describe('GitHub.com automation testing', () => {
         onPricingPage.contact_gitHub_Verification()
     })
 
+    it.only('Compare GitHub and GitLab',()=>{
+        onPricingPage.compare_gitHub_and_gitLab()
+    })
+
 })
