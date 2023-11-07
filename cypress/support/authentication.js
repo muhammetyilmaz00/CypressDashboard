@@ -9,7 +9,6 @@ export const wrongPassword = "2342342"
 
 export const loginPageErrorMessage = "Incorrect username or password."
 
-
 export const gitHubURL = "https://github.com/"
 export const gitHubPricingURL = "https://github.com/pricing"
 export const gitHubCompareURL = "https://resources.github.com/devops/tools/compare/"

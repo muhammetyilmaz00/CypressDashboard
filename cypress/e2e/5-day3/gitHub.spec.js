@@ -1,7 +1,7 @@
 /// <reference types= "cypress" />
 
 import { gitHubURL } from '../../support/authentication.js'
-import { onPricingPage } from '../../support/gitHub_pricing.js'
+import { gitHubPage } from '../../support/gitHub_pricing.js'
 
 describe('GitHub.com automation testing', () => {
 
@@ -10,12 +10,21 @@ describe('GitHub.com automation testing', () => {
     })
 
     it('Verify URL and check the footer of the Pricing page', () => {
-        onPricingPage.urlVerification()
-        onPricingPage.contact_gitHub_Verification()
+        gitHubPage.pricingUrlVerification()
+        gitHubPage.contact_gitHub_Verification()
     })
 
-    it.only('Compare GitHub and GitLab',()=>{
-        onPricingPage.compare_gitHub_and_gitLab()
+    it('Compare GitHub and GitLab',()=>{
+        gitHubPage.compare_gitHub_and_gitLab()
+    })
+
+    it('Navigate to Login page',()=>{
+        gitHubPage.navigateToLoginPage()
+    })
+
+    it('Navigate to main page',()=>{
+        gitHubPage.navigateToLoginPage()
+        gitHubPage.navigateToBack()
     })
 
 })

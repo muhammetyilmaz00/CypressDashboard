@@ -1,12 +1,12 @@
 
-import { gitHubPricingURL, gitHubCompareURL } from "./authentication";
+import { gitHubLoginURL,gitHubPricingURL, gitHubCompareURL } from "./authentication";
 
 var data = require('../fixtures/gitHubPricing.json')
 var compareText = require('../fixtures/comparePage.json')
 
-export class Pricing {
+export class GitHub {
 
-    urlVerification() {
+    pricingUrlVerification() {
         cy.contains('Pricing').click()
         cy.url().should('eq', gitHubPricingURL)
     }
@@ -34,8 +34,16 @@ export class Pricing {
             const text = $el.text()
             expect(text).to.eq(compareText.compareItem[index])
         })
+    }
 
+    navigateToLoginPage(){
+        cy.contains('Sign in').click()
+        cy.url().should('eq',gitHubLoginURL)
+    }
+
+    navigateToBack(){
+        cy.go('back')
     }
 }
 
-export const onPricingPage = new Pricing;
+export const gitHubPage = new GitHub;
