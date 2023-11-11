@@ -3,7 +3,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://www.wikipedia.org/',
-    pageLoadTimeout : 4000,
+    pageLoadTimeout : 8000,
     viewportHeight : 1028,
     viewportWidth : 1920,
     failOnStatusCode: false,

@@ -1,5 +1,5 @@
 
-import { gitHubLoginURL,gitHubPricingURL, gitHubCompareURL } from "./authentication";
+import { gitHubLoginURL,gitHubPricingURL, gitHubCompareURL } from "./commands";
 
 var data = require('../fixtures/gitHubPricing.json')
 var compareText = require('../fixtures/comparePage.json')
