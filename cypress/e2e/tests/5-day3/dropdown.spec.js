@@ -1,6 +1,6 @@
 /// <reference types= "cypress" />
 
-var data = require('../../fixtures/states.json')
+var data = require('../../../fixtures/states.json')
 
 
 describe('Dropdown Testing', () =>{

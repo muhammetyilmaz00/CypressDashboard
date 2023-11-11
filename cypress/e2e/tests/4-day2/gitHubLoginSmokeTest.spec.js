@@ -1,5 +1,6 @@
 /// <reference types= "cypress" />
 
+import '../../../support/commands'
 
 describe('Login Page Smoke Test', () => {
 

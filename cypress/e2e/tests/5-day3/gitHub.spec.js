@@ -1,7 +1,7 @@
 /// <reference types= "cypress" />
 
-import { gitHubURL } from '../../support/commands.js'
-import { gitHubPage } from '../../support/gitHub_pricing.js'
+import { gitHubURL } from '../../../support/constants.js'
+import { gitHubPage } from '../../../support/gitHub_pricing.js'
 
 describe('GitHub.com automation testing', () => {
 

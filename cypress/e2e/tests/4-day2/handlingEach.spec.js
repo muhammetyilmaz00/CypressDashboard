@@ -1,6 +1,6 @@
 /// <reference types= "cypress" />
 
-var data = require('../../fixtures/staging.json')
+var data = require('../../../fixtures/staging.json')
 
 describe('Handling each function', () =>{
 

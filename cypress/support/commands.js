@@ -27,7 +27,7 @@
 
 import 'cypress-file-upload';
 
-import { gitHubLoginURL, userName, password, wrongUserName, wrongPassword, loginPageErrorMessage } from '../support/commands.js';
+import { gitHubLoginURL, userName, password, wrongUserName, wrongPassword, loginPageErrorMessage } from '../support/constants.js';
 
 Cypress.Commands.add('login_Positive_Scenario', () => {
     cy.visit(gitHubLoginURL)

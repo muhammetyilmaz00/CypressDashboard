@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run -b chrome --headless --spec 'cypress/e2e/3-day1/checkboxes.spec.js'",
-    "GitHubPricingTest": "npx cypress run --record --key 7a8f200c-9f6f-4069-aec9-7c901bcde1f9  --spec 'cypress/e2e/5-day3/gitHub.spec.js' "
-    
+    "GitHubPricingTest": "npx cypress run --record --key 7a8f200c-9f6f-4069-aec9-7c901bcde1f9  --spec 'cypress/e2e/5-day3/gitHub.spec.js' ",
+    "allSpecTests": "npx cypress run --record --key 7a8f200c-9f6f-4069-aec9-7c901bcde1f9  --spec 'cypress/e2e/tests' "
   },
   "author": "Muhammet",
   "license": "ISC",

@@ -1,7 +1,7 @@
 /// <reference types= "cypress" />
 
-import { URL } from "../../support/commands"
-import {CNA} from "../../support/CNW"
+import { URL } from "../../../support/constants"
+import {CNA} from "../../../support/CNW"
 
 describe('Radio button tests', () => {
 

@@ -1,7 +1,7 @@
 /// <reference types= "cypress" />
 
 
-var data = require('../../fixtures/amazon.json')
+var data = require('../../../fixtures/amazon.json')
 
 describe('Amazon test cases', () => {
 
